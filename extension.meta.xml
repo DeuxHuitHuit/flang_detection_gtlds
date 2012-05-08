@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension id="frontend_localisation" status="beta" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+
+	<name>FLang detection gTLDs</name>
+
+	<description>Detects the frontend language from .htaccess.</description>
+
+	<repo type="github">https://github.com/vlad-ghita/flang_detection_gtlds</repo>
+
+	<url type="discuss">http://symphony-cms.com/download/extensions/view/82249/</url>
+
+	<types>
+		<type>Language detection</type>
+	</types>
+
+	<authors>
+		<author>
+			<name github="vlad-ghita" symphony="vladG">Vlad Ghita</name>
+			<email>vlad_micutul@yahoo.com</email>
+			<website>http://www.xanderadvertising.com</website>
+		</author>
+	</authors>
+
+	<dependencies>
+		<dependency version="1.4">frontend_localisation</dependency>
+	</dependencies>
+
+	<releases>
+		<release version="0.1beta" date="2012-05-08" min="2.3"><![CDATA[
+			* Beta
+		]]></release>
+	</releases>
+
+</extension>
