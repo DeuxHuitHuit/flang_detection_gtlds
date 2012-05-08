@@ -4,14 +4,12 @@
 
 	<name>FLang detection gTLDs</name>
 
-	<description>Detects the frontend language from .htaccess.</description>
+	<description>Detects the frontend language from .htaccess rules.</description>
 
 	<repo type="github">https://github.com/vlad-ghita/flang_detection_gtlds</repo>
 
-	<url type="discuss">http://symphony-cms.com/download/extensions/view/82249/</url>
-
 	<types>
-		<type>Language detection</type>
+		<type>FLang detection</type>
 	</types>
 
 	<authors>
