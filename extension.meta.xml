@@ -25,8 +25,8 @@
 	</dependencies>
 
 	<releases>
-		<release version="0.1beta" date="2012-05-08" min="2.3"><![CDATA[
-			* Beta
+		<release version="1.0" date="2012-05-11" min="2.3"><![CDATA[
+			* Initial release
 		]]></release>
 	</releases>
 

@@ -2,8 +2,8 @@
 
 Adds frontend language detection through .htaccess file.
 
-- Version: 0.1beta
-- Date: 2012-05-08
+- Version: 1.0
+- Date: 2012-05-11
 - Requirements:
 	* Symphony 2.3
 	* [Frontend Localisation at least v1.4](http://github.com/vlad-ghita/frontend_localisation)
