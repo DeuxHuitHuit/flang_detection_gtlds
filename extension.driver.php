@@ -13,11 +13,11 @@
 		/*------------------------------------------------------------------------------------------------*/
 
 		public function install(){
-			return $this->__updateRewriteRules('create') && $this->__updateRewriteRules('edit', FLang::instance()->getLangs());
+			return $this->__updateRewriteRules('create') && $this->__updateRewriteRules('edit', FLang::getLangs());
 		}
 
 		public function enable(){
-			return $this->__updateRewriteRules('create') && $this->__updateRewriteRules('edit', FLang::instance()->getLangs());
+			return $this->__updateRewriteRules('create') && $this->__updateRewriteRules('edit', FLang::getLangs());
 		}
 
 		public function disable(){
