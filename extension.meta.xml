@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<extension id="flang_detection_gtlds" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
-
+<extension id="flang_detection_gtlds" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
 	<name>FLang detection gTLDs</name>
-
 	<description>Detects the frontend language from .htaccess rules.</description>
-
 	<repo type="github">https://github.com/vlad-ghita/flang_detection_gtlds</repo>
-
 	<types>
 		<type>Multilingual</type>
 	</types>
-
 	<authors>
 		<author>
 			<name github="vlad-ghita" symphony="vladG">Vlad Ghita</name>
@@ -19,12 +13,13 @@
 			<website>http://www.xanderadvertising.com</website>
 		</author>
 	</authors>
-
 	<dependencies>
 		<dependency version="1.5">frontend_localisation</dependency>
 	</dependencies>
-
 	<releases>
+		<release version="1.2.0" date="2016-03-07" min="2.3" max="2.x.x"><![CDATA[
+			* Updated compatibility info.
+		]]></release>
 		<release version="1.1" date="2012-05-14" min="2.3"><![CDATA[
 			* Frontend Localisation 1.5 compatibility.
 		]]></release>
@@ -33,5 +28,4 @@
 			* Initial release
 		]]></release>
 	</releases>
-
 </extension>
