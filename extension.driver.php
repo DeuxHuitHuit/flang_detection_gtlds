@@ -106,23 +106,23 @@
 			$token_region = md5('region');
 			$token_symphony = md5('symphony-page');
 
-			if( !empty($langs) ){
+			if (!empty($langs)) {
 				$languages = array();
 				$regions = array();
-				foreach( $langs as $lang_code ){
+				foreach ($langs as $lang_code) {
 					$languages[] = substr($lang_code, 0, 2);
 					$regions[] = substr(strrchr($lang_code, '-'), 1);
 				}
 				$languages = array_filter(array_unique($languages));
 				$regions = array_filter(array_unique($regions));
 
-				$languages = (is_array($languages) and !empty($languages)) ? implode('|', $languages) : NULL;
-				$regions = (is_array($regions) and !empty($regions)) ? implode('|', $regions) : NULL;
+				$languages = (is_array($languages) && !empty($languages)) ? implode('|', $languages) : null;
+				$regions = (is_array($regions) && !empty($regions)) ? implode('|', $regions) : null;
 
 				$rule = "\n\tRewriteCond %{REQUEST_FILENAME} !-d";
 				$rule .= "\n\tRewriteCond %{REQUEST_FILENAME} !-f";
 				$rule .= "\n\tRewriteRule ^({$languages})-?({$regions})?\/(.*\/?)$ index.php?fl-language={$token_language}&fl-region={$token_region}&symphony-page={$token_symphony}&%{QUERY_STRING} [L]";
-			} else{
+			} else {
 				$rule = "\n\t### no language codes set";
 			}
 

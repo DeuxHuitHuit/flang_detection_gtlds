@@ -2,11 +2,16 @@
 <extension id="flang_detection_gtlds" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
 	<name>FLang detection gTLDs</name>
 	<description>Detects the frontend language from .htaccess rules.</description>
-	<repo type="github">https://github.com/vlad-ghita/flang_detection_gtlds</repo>
+	<repo type="github">https://github.com/DeuxHuitHuit/flang_detection_gtlds</repo>
 	<types>
 		<type>Multilingual</type>
+		<type>Workflow</type>
 	</types>
 	<authors>
+		<author>
+			<name github="DeuxHuitHuit" symphony="nitriques" twitter="DeuxHuitHuit">Deux Huit Huit</name>
+			<website>https://deuxhuithuit.com</website>
+		</author>
 		<author>
 			<name github="vlad-ghita" symphony="vladG">Vlad Ghita</name>
 			<email>vlad_micutul@yahoo.com</email>
@@ -14,16 +19,18 @@
 		</author>
 	</authors>
 	<dependencies>
-		<dependency version="1.5">frontend_localisation</dependency>
+		<dependency version="2.7.0">frontend_localisation</dependency>
 	</dependencies>
 	<releases>
+		<release version="2.0.0" date="2016-07-09" min="2.5.0" max="2.x.x"><![CDATA[
+			* Updated compatibility info.
+		]]></release>
 		<release version="1.2.0" date="2016-03-07" min="2.3" max="2.x.x"><![CDATA[
 			* Updated compatibility info.
 		]]></release>
 		<release version="1.1" date="2012-05-14" min="2.3"><![CDATA[
 			* Frontend Localisation 1.5 compatibility.
 		]]></release>
-
 		<release version="1.0" date="2012-05-11" min="2.3"><![CDATA[
 			* Initial release
 		]]></release>
